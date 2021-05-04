@@ -7,14 +7,28 @@
         <title>Document</title>
         <link href="/popup.css" rel="stylesheet" />
     </head>
+
     <body>
-        <div class="range-wrap">
+        <label class="switch">
+            <input id="switch" type="checkbox" />
+            <span class="slider round"></span>
+        </label>
+        <div class="range-container">
             <label>
-                <p>Change Font-Size of { p }</p>
+                <p>Font Size Changer</p>
                 <div class="range-wrap">
                     <div class="range-value" id="rangeV"></div>
                     <input id="range" type="range" min="0" max="200" value="20" step="1" />
                 </div>
+            </label>
+        </div>
+        <div class="selElement-container">
+            <label>
+                <p>Change font size of these elements:</p>
+                <div class="selElement-wrap">
+                    <input id="selElement" value="p" />
+                </div>
+                <p>Separated by comma's ( , )</p>
             </label>
         </div>
 
